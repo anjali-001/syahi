@@ -1,4 +1,12 @@
-let r,g,b;
+
+
+chrome.runtime.onMessage.addListener(gotMessage);
+
+function gotMessage(message, sender, sendResponse) {
+    console.log(message.txt);
+    if(message.txt == "button clicked")
+    {
+        let r,g,b;
 
 var s = function(sketch) {
     sketch.setup = function() {
@@ -30,4 +38,8 @@ var s = function(sketch) {
 }
 
 var myp5 = new p5(s);
+    }
+}
+
+
   

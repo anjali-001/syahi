@@ -7,6 +7,13 @@
             "matches": ["<all_urls>"],
             "js": ["p5.js","content.js"]
         }
-    ]
+    ],
+    "background": {
+        "scripts" : ["background.js"]
+    },
+
+    "browser_action": {
+        "deafault_icon": "logo.png"
+    }
     
 }
